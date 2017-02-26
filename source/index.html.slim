@@ -1,0 +1,18 @@
+---
+title: Başak
+---
+
+- plt = palette
+
+- content_for :background_color do
+  = plt['background_color']
+
+.half
+  = svg 'heart'
+.half
+  h1 style="color: #{ plt['text_color'] }" Başak
+
+css:
+  svg path {
+    fill: #{ plt['foreground_color'] } !important;
+  }
